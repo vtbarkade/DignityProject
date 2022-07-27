@@ -30,7 +30,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.2.2</version>
+    <version>3.141.59</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
@@ -43,6 +43,12 @@
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.2.0</version>
+</dependency>
+<!-- Extent Report -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
 </dependency>
 
 
