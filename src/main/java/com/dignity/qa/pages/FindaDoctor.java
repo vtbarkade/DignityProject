@@ -56,14 +56,14 @@ public class FindaDoctor extends TestBase{
 		}
 		catch(NoSuchElementException e)
 		{}
-		js.executeScript("arguments[0].value = '"+doctor+"';", doctorname);
-		js.executeScript("arguments[0].value = '"+citynm+"';", location);
-		js.executeScript("arguments[0].click();",search );
+		//js.executeScript("arguments[0].value = '"+doctor+"';", doctorname);
+		//js.executeScript("arguments[0].value = '"+citynm+"';", location);
+		//js.executeScript("arguments[0].click();",search );
 		
 		wait = new WebDriverWait(driver,5);
-		//wait.until(ExpectedConditions.visibilityOf(location)).sendKeys(citynm);
-		//wait.until(ExpectedConditions.visibilityOf(doctorname)).sendKeys(doctor);
-		//wait.until(ExpectedConditions.visibilityOf(search)).click();
+		wait.until(ExpectedConditions.visibilityOf(location)).sendKeys(citynm);
+		wait.until(ExpectedConditions.visibilityOf(doctorname)).sendKeys(doctor);
+		wait.until(ExpectedConditions.visibilityOf(search)).click();
 		
 		
 		//doctorname.sendKeys(doctor);
